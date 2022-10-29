@@ -1,0 +1,22 @@
+dateModified: 1667072259
+email:
+  fromEmail: harry.hurst3855@gmail.com
+  fromName: 'My Site'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    4a3761a8-e274-4c51-924f-7c51fd02f767: Common
+    4e650210-135d-43b9-8d36-e7fa7fc2e761: 'My Site'
+    bad40dcf-5717-4096-892c-caca8bdb0ef9: 'My Site'
+system:
+  edition: solo
+  live: true
+  name: 'My Site'
+  schemaVersion: 4.0.0.9
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
