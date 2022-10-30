@@ -1,13 +1,23 @@
-dateModified: 1667072259
+dateModified: 1667133317
 email:
   fromEmail: harry.hurst3855@gmail.com
   fromName: 'My Site'
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  blog:
+    hasUrls: true
+    name: Blog
+    settings:
+      path: '@webroot/assets/blog'
+    type: craft\fs\Local
+    url: '@web/assets/blog'
 meta:
   __names__:
-    4a3761a8-e274-4c51-924f-7c51fd02f767: Common
-    4e650210-135d-43b9-8d36-e7fa7fc2e761: 'My Site'
-    bad40dcf-5717-4096-892c-caca8bdb0ef9: 'My Site'
+    4a3761a8-e274-4c51-924f-7c51fd02f767: Common # Common
+    4e650210-135d-43b9-8d36-e7fa7fc2e761: 'My Site' # My Site
+    6a76082d-3a56-4eff-979e-e1d518c65370: Home
+    bad40dcf-5717-4096-892c-caca8bdb0ef9: 'My Site' # My Site
+    d7032291-5fff-4db6-b725-eaa396ed1820: Home
 system:
   edition: solo
   live: true

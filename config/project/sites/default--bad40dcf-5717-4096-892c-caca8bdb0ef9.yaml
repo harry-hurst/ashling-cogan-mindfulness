@@ -4,5 +4,5 @@ hasUrls: true
 language: en-US
 name: 'My Site'
 primary: true
-siteGroup: 4e650210-135d-43b9-8d36-e7fa7fc2e761
+siteGroup: 4e650210-135d-43b9-8d36-e7fa7fc2e761 # My Site
 sortOrder: 1
