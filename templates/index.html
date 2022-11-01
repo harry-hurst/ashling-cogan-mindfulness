@@ -14,11 +14,12 @@
       type="image/x-icon"
     />
 
-    <title>Motoventure</title>
+    <title>AC Mindfulness</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap"
       rel="stylesheet"
     />
 
@@ -28,8 +29,8 @@
   <body class="home-page">
     <header class="header">
       <div class="header__content content-column">
-        <a href="./" class="logo">
-          <img src="{{ siteUrl }}static/images/logo.svg" alt="AC Mindfullness" />
+        <a href="./" class="nav__link" id="logo">
+          &thinsp; Ashling Cogan Mindfulness &thinsp;
         </a>
 
         <button type="button" class="nav-toggle">
@@ -46,23 +47,18 @@
         </button>
 
         <nav class="nav">
+          <a href="about.html" class="nav__link">About</a>
           <a href="stories.html" class="nav__link">Stories</a>
-          <a href="gear.html" class="nav__link">Our Gear</a>
+          <a href="gear.html" class="nav__link">Book</a>
         </nav>
       </div>
     </header>
 
-    <div class="wrapper">
-    
-      {% block content %}
-
-      {% endblock %}
-
-    </div>
+    <div class="wrapper">{% block content %} {% endblock %}</div>
 
     <footer class="footer">
       <div class="content-column centered">
-        <p>Copyright 2021 Motoventure Corp. All rights reserved.</p>
+        <p>Copyright 2022 AC Mindfulness. All rights reserved.</p>
       </div>
     </footer>
 
