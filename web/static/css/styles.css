@@ -1,14 +1,11 @@
 :root {
-  --white: #ffffff;
   --pink: #ff40ff;
   --tan: #e6e6e6;
   --grey-100: #f9f9f9;
   --grey-200: #f0f0f0;
   --grey-300: #e5e5e5;
-  --blue: #071420;
   --black: #0e1011;
   --almost-black: #010101;
-  --true-black: #000000;
 }
 
 * {
@@ -16,28 +13,19 @@
   box-sizing: border-box;
 }
 
+ul {
+  padding: 0;
+  list-style: none;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
   font-family: "Shadows Into Light Two", cursive;
-  font-size: 16px;
   line-height: 1.5;
-  color: var(--white);
+  color: white;
   -webkit-font-smoothing: antialiased;
   background: var(--almost-black);
-}
-
-body:before {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 300;
-  content: "";
-  pointer-events: none;
-  background: rgba(5, 5, 5, 0);
-  transition: background-color 0.3s ease;
 }
 
 @media screen and (max-width: 768px) {
@@ -64,17 +52,16 @@ body.inner-page {
   min-height: calc(100vh - 55px); /* Viewport height minus the footer */
 }
 
-img,
+/* img,
 iframe,
 embed {
   max-width: 100%;
-}
+} */
 
 #logo {
   font-size: 1.4em !important;
-  line-height: 1.6em;
-  font-weight: 700;
   margin-left: 0;
+  font-weight: 700;
 }
 
 /* Content Column */
@@ -104,7 +91,7 @@ h1 {
   font-size: 3.125em;
   line-height: 1.2;
   font-weight: bold;
-  color: var(--white);
+  color: white;
 }
 
 h1.centered {
@@ -222,7 +209,7 @@ figure {
 }
 
 .inner-page .header {
-  background: var(--true-black);
+  background: black;
 }
 
 .header__content {
@@ -242,13 +229,13 @@ figure {
   font-size: 16px;
   text-decoration: none;
   font-weight: 500;
-  color: var(--white);
+  color: white;
   border-bottom: 2px solid transparent;
   transition: border-color 0.12s ease;
 }
 
 .nav__link:visited {
-  color: var(--white);
+  color: white;
 }
 
 .nav__link.nav__link--active {
@@ -326,7 +313,7 @@ figure {
     pointer-events: none;
     transform: rotate3d(1, -1, 0, 22deg);
     display: none;
-    background: var(--true-black);
+    background: black;
     transition: opacity 0.3s ease, transform 0.3s ease;
   }
 
@@ -352,7 +339,7 @@ figure {
   }
 
   .header.nav-visible {
-    background-color: var(--true-black);
+    background-color: black;
   }
 
   .header.nav-visible .nav {
@@ -388,9 +375,8 @@ article.section {
 }
 
 .section--light {
-  color: var(--true-black);
-  /* background-color: var(--tan); */
-  background: url("../images/pattern-hair__light.png") center top no-repeat;
+  color: black;
+  background-color: var(--tan);
   background-size: cover;
 }
 
@@ -405,6 +391,10 @@ article.section {
   margin-top: -2.5em;
   padding-top: 11.25em;
   clip-path: polygon(0 3.75em, 100% 0, 100% 100%, 0 100%);
+}
+
+.section--wave-background {
+  background-image: url("../images/pattern-hair__light.png");
 }
 
 /* Featured Story */
@@ -432,13 +422,13 @@ article.section {
   max-width: 540px;
 }
 
-.benefits-section__content p:last-of-type {
-  margin-bottom: 0;
-}
-
 .benefits__slider {
   margin: -2.5em 0;
   width: calc(100% - 540px);
+}
+
+.cta-section__content {
+  padding: 3.8rem 0 3.8rem 0;
 }
 
 @media screen and (max-width: 1200px) {
@@ -446,7 +436,8 @@ article.section {
     flex-direction: column;
   }
 
-  .benefits-section__content {
+  .benefits-section__content,
+  .who-can-help-section__content {
     padding-left: 0;
   }
 
@@ -538,6 +529,9 @@ article.section {
   margin: 0 25px 2em;
   width: 300px;
   max-width: 100%;
+  background-color: white;
+  border: 4px solid #fa61fb;
+  padding: 2em;
 }
 
 .flex-columns__item p {
@@ -546,10 +540,7 @@ article.section {
 
 .flex-columns__image {
   margin: 0 0 1.38em;
-  width: 200px;
   height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
 }
 
 /* Two Columns */
@@ -603,7 +594,7 @@ article.section {
 .footer {
   padding: 17px 0;
   color: var(--grey-300);
-  background: var(--true-black);
+  background: black;
 }
 
 .footer p {

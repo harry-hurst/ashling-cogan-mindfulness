@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: about
+name: About
+propagationMethod: all
+siteSettings:
+  bad40dcf-5717-4096-892c-caca8bdb0ef9: # My Site
+    enabledByDefault: true
+    hasUrls: true
+    template: general.twig
+    uriFormat: about
+type: single

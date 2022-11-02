@@ -1,4 +1,4 @@
-dateModified: 1667133317
+dateModified: 1667341294
 email:
   fromEmail: harry.hurst3855@gmail.com
   fromName: 'My Site'
@@ -13,11 +13,15 @@ fs:
     url: '@web/assets/blog'
 meta:
   __names__:
+    1ff37332-5103-482d-bd49-d7bd70eba999: Contact
     4a3761a8-e274-4c51-924f-7c51fd02f767: Common # Common
     4e650210-135d-43b9-8d36-e7fa7fc2e761: 'My Site' # My Site
-    6a76082d-3a56-4eff-979e-e1d518c65370: Home
+    6a76082d-3a56-4eff-979e-e1d518c65370: Home # Home
+    8bff640d-fb71-4ddb-9041-b9bba82f9343: About # About
+    24f7fa7c-48ae-4043-88de-e344ae5fd719: About # About
+    5856770e-d42a-4639-8c25-131ccc7a7dc1: Contact
     bad40dcf-5717-4096-892c-caca8bdb0ef9: 'My Site' # My Site
-    d7032291-5fff-4db6-b725-eaa396ed1820: Home
+    d7032291-5fff-4db6-b725-eaa396ed1820: Home # Home
 system:
   edition: solo
   live: true
